@@ -539,6 +539,10 @@ nav.s {
   line-height: 1.7;
 }
 
+.about-resume-cta {
+  margin: 18px 0 24px;
+}
+
 /* Education Cards */
 .education-cards {
   margin: 12px 0;
