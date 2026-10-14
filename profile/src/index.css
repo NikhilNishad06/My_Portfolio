@@ -1879,3 +1879,143 @@ footer a:hover {
   color: var(--mute);
   margin-top: 14px;
 }
+
+/* =========================================================
+   Scroll to Top Rocket Button
+========================================================= */
+.scroll-to-top-btn {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: rgba(10, 18, 36, 0.85);
+  border: 1.5px solid rgba(56, 189, 248, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5), 0 0 20px rgba(56, 189, 248, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px) scale(0.85);
+  transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              visibility 0.4s,
+              border-color 0.3s,
+              box-shadow 0.3s;
+  overflow: visible;
+  padding: 0;
+}
+
+.scroll-to-top-btn.show {
+  opacity: 1;
+  visibility: visible;
+  animation: rocketFloatContinuous 2.4s ease-in-out infinite alternate;
+}
+
+@keyframes rocketFloatContinuous {
+  0% {
+    transform: translateY(0) scale(1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5), 0 0 20px rgba(56, 189, 248, 0.3);
+  }
+  50% {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.55), 0 0 28px rgba(56, 189, 248, 0.5);
+  }
+  100% {
+    transform: translateY(-14px) scale(1.04);
+    box-shadow: 0 22px 35px rgba(0, 0, 0, 0.6), 0 0 35px rgba(56, 189, 248, 0.7);
+  }
+}
+
+.scroll-to-top-btn:hover {
+  animation-play-state: paused;
+  transform: translateY(-8px) scale(1.1);
+  border-color: #38bdf8;
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.65), 0 0 35px rgba(56, 189, 248, 0.75);
+}
+
+.rocket-icon-img {
+  width: 36px;
+  height: 52px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 0 10px rgba(56, 189, 248, 0.95)) drop-shadow(0 0 20px rgba(168, 85, 247, 0.7));
+  animation: rocketEnginePulse 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes rocketEnginePulse {
+  0% {
+    filter: drop-shadow(0 0 6px rgba(56, 189, 248, 0.6)) brightness(1);
+    transform: translateY(1px);
+  }
+  100% {
+    filter: drop-shadow(0 0 14px rgba(125, 211, 252, 1)) brightness(1.2);
+    transform: translateY(-2px);
+  }
+}
+
+/* Rocket Launch Animation when clicked */
+.scroll-to-top-btn.launching {
+  animation: none !important;
+}
+
+.scroll-to-top-btn.launching .rocket-icon-img {
+  animation: rocketTakeoff 0.9s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes rocketTakeoff {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  30% {
+    transform: translateY(4px) scale(0.92);
+  }
+  100% {
+    transform: translateY(-120px) scale(0.4);
+    opacity: 0;
+  }
+}
+
+/* Tooltip badge */
+.rocket-tooltip {
+  position: absolute;
+  top: -30px;
+  background: rgba(15, 23, 42, 0.95);
+  color: var(--cyan);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 6px;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  opacity: 0;
+  transform: translateY(5px);
+  transition: opacity 0.25s, transform 0.25s;
+  pointer-events: none;
+}
+
+.scroll-to-top-btn:hover .rocket-tooltip {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media(max-width: 600px) {
+  .scroll-to-top-btn {
+    bottom: 20px;
+    right: 20px;
+    width: 48px;
+    height: 48px;
+  }
+  .rocket-icon-img {
+    width: 24px;
+    height: 36px;
+  }
+}
+
