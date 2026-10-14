@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import rocketLogo from '../assets/rocket2-removebg-preview.png';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,7 +33,8 @@ export default function Navbar() {
     <>
       <nav id="nav" className={isScrolled ? 's' : ''} aria-label="Main">
         <a href="#top" className="logo" aria-label="Nikhil Nishad home">
-          Nikhil Nishad<i />
+          <img src={rocketLogo} alt="Rocket Logo" className="nav-rocket-icon" />
+          <span>Nikhil Nishad</span>
         </a>
         <div className="links">
           <a href="#about">About</a>

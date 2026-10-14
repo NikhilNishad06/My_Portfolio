@@ -83,24 +83,8 @@ export default function Work() {
               Selected <span className="grad">Work & Portals</span>
             </h2>
             <p className="work-sub rv">
-              Scalable enterprise systems engineered with MERN stack — automatically scrolling or use arrows to navigate.
+              Scalable enterprise systems engineered with MERN stack — automatically scrolling (hover to inspect).
             </p>
-          </div>
-          <div className="work-nav-btns rv">
-            <button
-              className="scroll-btn prev"
-              onClick={() => scroll('left')}
-              aria-label="Scroll Left"
-            >
-              ←
-            </button>
-            <button
-              className="scroll-btn next"
-              onClick={() => scroll('right')}
-              aria-label="Scroll Right"
-            >
-              →
-            </button>
           </div>
         </div>
       </div>

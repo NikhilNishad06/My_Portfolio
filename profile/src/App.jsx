@@ -13,6 +13,7 @@ import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import AIChatbot from './components/AIChatbot';
 
 export default function App() {
   const [loading, setLoading] = useState(true);
@@ -34,6 +35,7 @@ export default function App() {
       </main>
       <Footer />
       <ScrollToTop />
+      <AIChatbot />
     </>
   );
 }
