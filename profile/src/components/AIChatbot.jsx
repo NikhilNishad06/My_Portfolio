@@ -20,13 +20,13 @@ const KNOWLEDGE_BASE = [
   },
   {
     triggers: ['experience', 'job', 'company', 'botivate', 'work history', 'intern', 'role'],
-    en: `Nikhil's work experience:\n\n• **Full Stack Web Developer** at **Botivate Services LLP** (Mar 2026 – Present)\n  - Engineered 7+ enterprise production applications, client architecture & deployment.\n• **Full Stack Developer Intern** at **Botivate Services LLP** (Jan 2026 – Feb 2026)\n  - Hands-on enterprise module creation, database tuning & API optimization.`,
-    hinglish: `Nikhil ka work experience:\n\n• **Full Stack Web Developer** at **Botivate Services LLP** (Mar 2026 – Present)\n  - 7+ enterprise production applications banaye, client architecture aur deployment lead kiya.\n• **Full Stack Developer Intern** at **Botivate Services LLP** (Jan 2026 – Feb 2026)\n  - Enterprise modules, database tuning aur API optimization pe hands-on kaam kiya.`
+    en: `Nikhil's work experience:\n\n• **Full Stack Web Developer** at **Botivate Services LLP** (Mar 2026 – Present)\n  - Designed, developed, and deployed 10+ client web applications end-to-end (ERP, HR & Payroll, IMS, Transport, Coal & Mining, Petty Cash, Document Upload).\n• **Full Stack Web Developer Intern** at **Botivate Services LLP** (Jan 2026 – Feb 2026)\n  - Developed enterprise modules for ERP and HR systems, REST APIs & database design.`,
+    hinglish: `Nikhil ka work experience:\n\n• **Full Stack Web Developer** at **Botivate Services LLP** (Mar 2026 – Present)\n  - 10+ client web applications end-to-end deploy kiye (ERP, HR & Payroll, IMS, Transport, Coal & Mining, Petty Cash, Document Upload system).\n• **Full Stack Web Developer Intern** at **Botivate Services LLP** (Jan 2026 – Feb 2026)\n  - ERP aur HR systems ke enterprise modules, REST APIs aur database design pe kaam kiya.`
   },
   {
     triggers: ['education', 'degree', 'college', 'university', 'cgpa', 'kalinga', 'avish', 'course', 'padhai'],
-    en: `Nikhil's educational background:\n\n🎓 **Bachelor of Computer Application (BCA)**\n• Kalinga University, Raipur (2023 – 2026)\n• **CGPA: 3.79 / 4.00** (Academic Excellence)\n\n📜 **Full Stack Web Development Certification**\n• Avish Educom, Durg (2025 – 2026)`,
-    hinglish: `Nikhil ka educational background:\n\n🎓 **Bachelor of Computer Application (BCA)**\n• Kalinga University, Raipur (2023 – 2026)\n• **CGPA: 3.79 / 4.00** (Academic Excellence)\n\n📜 **Full Stack Web Development Certification**\n• Avish Educom, Durg (2025 – 2026)`
+    en: `Nikhil's educational background:\n\n🎓 **Bachelor of Computer Application (BCA)**\n• Kalinga University, Raipur, Chhattisgarh (Aug 2023 – Feb 2026)\n• **CGPA: 3.79 / 4.00**\n\n📜 **Full Stack Web Development**\n• Avish Educom, Agration Chowk, Durg, Chhattisgarh (Feb 2026)`,
+    hinglish: `Nikhil ka educational background:\n\n🎓 **Bachelor of Computer Application (BCA)**\n• Kalinga University, Raipur, Chhattisgarh (Aug 2023 – Feb 2026)\n• **CGPA: 3.79 / 4.00**\n\n📜 **Full Stack Web Development**\n• Avish Educom, Agration Chowk, Durg, Chhattisgarh (Feb 2026)`
   },
   {
     triggers: ['contact', 'email', 'phone', 'call', 'reach', 'hire', 'message', 'whatsapp', 'linkedin', 'github', 'sampark'],

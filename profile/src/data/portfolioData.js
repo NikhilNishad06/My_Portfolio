@@ -35,83 +35,92 @@ export const portfolioData = {
     location: 'Bhilai, India'
   },
   stats: [
-    { value: 7, label: 'Enterprise Systems Built' },
+    { value: 10, suffix: '+', label: 'Client Apps Deployed' },
     { value: 3.79, decimals: 2, suffix: '/4', label: 'BCA CGPA' },
-    { value: 8, label: 'Key Projects' },
+    { value: 10, label: 'Key Enterprise Projects' },
     { value: 4, label: 'Core MERN Technologies' }
   ],
   projects: [
     {
       id: '01',
-      title: 'IMS — Inventory Management System',
-      category: 'Inventory & Stock Control',
-      color: '#4ecdc4',
-      description: 'End-to-end inventory management featuring real-time stock tracking, automated low-stock reorder triggers, multi-warehouse support, barcode scanning, and supplier workflow management.',
-      tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'REST APIs'],
+      title: 'ERP & Master Management System',
+      category: 'Enterprise Platform',
+      color: '#8fb8e8',
+      description: 'Built a centralized ERP module to manage master data, user roles, and cross-department workflows with role-based access for a business client.',
+      tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB'],
       note: 'Built for enterprise client'
     },
     {
       id: '02',
-      title: 'Coal & Mining Operations System',
-      category: 'Mining & Heavy Industry',
-      color: '#e0a96d',
-      description: 'Specialized enterprise portal for coal extraction, weighbridge automation, daily production logs, safety compliance audits, and fleet dispatch tracking in mining zones.',
-      tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Socket.io'],
-      note: 'Heavy industry enterprise system'
+      title: 'HR & Payroll System',
+      category: 'Attendance & Automated Payroll',
+      color: '#c8a27a',
+      description: 'Employee management with outside-attendance, live location tracking, role-based dashboards, and fully automated one-click monthly net salary generation.',
+      tech: ['React.js', 'Node.js', 'MongoDB', 'JWT Auth'],
+      note: 'Built for enterprise client'
     },
     {
       id: '03',
-      title: 'Transport Management System (TMS)',
-      category: 'Logistics & Fleet Operations',
-      color: '#6c9ce6',
-      description: 'Logistics management platform covering vehicle tracking, driver allocation, route optimization, consignment status, diesel/expense tracking, and automated client billing.',
-      tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Google Maps API'],
-      note: 'Production fleet logistics software'
+      title: 'MIS (Management Information System)',
+      category: 'BI & Real-Time Sync',
+      color: '#a78bfa',
+      description: 'Centralized MIS dashboard consolidating cross-department data into real-time reports; Google Apps Script automates sync with Google Sheets.',
+      tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Google Apps Script'],
+      note: 'Executive reporting suite'
     },
     {
       id: '04',
-      title: 'Professional Analytics & MIS Dashboard',
-      category: 'BI & Real-Time Analytics',
-      color: '#a78bfa',
-      description: 'Executive decision dashboard consolidating multi-department KPIs, predictive business forecasting, interactive charts, and live Google Sheets bidirectional data sync.',
-      tech: ['React.js', 'Node.js', 'Chart.js', 'Google Apps Script', 'MongoDB'],
-      note: 'Executive BI & Reporting suite'
+      title: 'IMS & Purchase / Sales / Order-to-Delivery',
+      category: 'Inventory & Order Workflow',
+      color: '#4ecdc4',
+      description: 'Automated the purchase-to-delivery workflow with real-time order tracking, inventory and stock updates, and sales/purchase reporting.',
+      tech: ['React.js', 'Express.js', 'MongoDB'],
+      note: 'Production supply chain system'
     },
     {
       id: '05',
-      title: 'ERP & Master Management',
-      category: 'Enterprise Platform',
-      color: '#8fb8e8',
-      description: 'A centralized ERP module for managing master data, role-based access control (RBAC), and cross-department automated workflows.',
-      tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB'],
-      note: 'Built for a business client'
+      title: 'Transport & Vehicle Management System',
+      category: 'Logistics & Fleet Operations',
+      color: '#6c9ce6',
+      description: 'Managed vehicle and transport operations including challan records, FASTag tracking, and transport documentation with reporting.',
+      tech: ['React.js', 'Node.js', 'MongoDB'],
+      note: 'Fleet & logistics portal'
     },
     {
       id: '06',
-      title: 'HR Management System',
-      category: 'Attendance & Live Tracking',
-      color: '#c8a27a',
-      description: 'Employee management with outside-attendance geo-fencing, live location monitoring, leave tracking, and payroll-ready dashboards.',
-      tech: ['React.js', 'Node.js', 'MongoDB', 'JWT Auth'],
-      note: 'Built for a business client'
+      title: 'Coal & Mining System',
+      category: 'Mining & Heavy Industry',
+      color: '#e0a96d',
+      description: "Built a domain-specific management system for coal and mining operations, developed around the client's specific requirements and workflows.",
+      tech: ['React.js', 'Node.js', 'MongoDB'],
+      note: 'Mining workflow system'
     },
     {
       id: '07',
-      title: 'Purchase & Sales Order System',
-      category: 'Order-to-Delivery Workflow',
-      color: '#d8c8a4',
-      description: 'Automates the full purchase-to-delivery lifecycle with real-time PO tracking, quotation comparison, and automated invoice reconciliation.',
-      tech: ['React.js', 'Express.js', 'MongoDB', 'REST APIs'],
-      note: 'Built for a business client'
+      title: 'Petty Cash System',
+      category: 'Finance & Expense Auditing',
+      color: '#34d399',
+      description: 'Tracked petty cash entries, expenses, and approvals with transparent, easy-to-audit reporting for day-to-day cash management.',
+      tech: ['React.js', 'Node.js', 'MongoDB'],
+      note: 'Day-to-day cash management'
     },
     {
       id: '08',
-      title: 'Checklist & Delegation Platform',
-      category: 'Team Accountability',
-      color: '#7fb7b0',
-      description: 'Task delegation and SOP checklist tracking tools with SLA reminders and alert notifications improving cross-team execution speed.',
+      title: 'Document Upload System (PDF / Image / Excel)',
+      category: 'File Management & Security',
+      color: '#f472b6',
+      description: 'Secure multi-format (PDF, image, Excel) file upload and management module integrated across multiple client applications.',
       tech: ['React.js', 'Node.js', 'MongoDB'],
-      note: 'Built for a business client'
+      note: 'Cross-app file manager'
+    },
+    {
+      id: '09',
+      title: 'Checklist & Delegation System',
+      category: 'Task Delegation & Tracking',
+      color: '#7fb7b0',
+      description: 'Built task delegation and checklist tracking tools with email/in-app notifications to improve team accountability.',
+      tech: ['React.js', 'Node.js', 'MongoDB'],
+      note: 'Team accountability suite'
     }
   ],
   skillRows: [
@@ -200,41 +209,41 @@ export const portfolioData = {
       period: 'Mar 2026 – Present',
       role: 'Full Stack Web Developer',
       organization: 'Botivate Services LLP',
-      type: 'Full-Time Experience',
+      type: 'On-site · Full-time',
       badge: 'Active Role',
       badgeColor: '#10b981',
-      description: 'Designing, building, and deploying scalable client applications end-to-end. Maintaining 7 enterprise systems including ERP, real-time HR live-tracking, Purchase & Sales, MIS, and automated notification workflows.',
-      skills: ['MERN Stack', 'REST APIs', 'RBAC Auth', 'Query Tuning', 'Enterprise Systems']
+      description: 'Designed, developed, and deployed 10+ client web applications end-to-end. Built enterprise systems including ERP, HR & Payroll, IMS, Purchase & Sales, MIS, Coal & Mining, Transport, Petty Cash, and Document management.',
+      skills: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'REST APIs', 'RBAC Auth']
     },
     {
-      period: 'Jan – Feb 2026',
+      period: 'Jan 2026 – Feb 2026',
       role: 'Full Stack Web Developer Intern',
       organization: 'Botivate Services LLP',
-      type: 'Industrial Internship',
+      type: 'On-site · Internship',
       badge: 'Completed',
       badgeColor: '#60a5fa',
-      description: 'Contributed to core enterprise modules for ERP and HR systems. Built secure authentication, database schemas, and RESTful endpoints under senior architectural guidance.',
-      skills: ['React.js', 'Express.js', 'MongoDB', 'API Architecture']
+      description: 'Assisted in building and maintaining client web applications, gaining hands-on exposure to full MERN development. Supported team in developing enterprise modules for ERP and HR management.',
+      skills: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'Database Design']
     },
     {
       period: 'Aug 2023 – Feb 2026',
       role: 'Bachelor of Computer Application (BCA)',
-      organization: 'Kalinga University, Raipur',
-      type: 'Formal Higher Education',
+      organization: 'Kalinga University, Raipur, Chhattisgarh',
+      type: 'Higher Education',
       badge: 'CGPA 3.79 / 4.00',
       badgeColor: '#f59e0b',
-      description: 'Completed Bachelor degree with exceptional academic standing (3.79 CGPA). Specialised in Data Structures, Database Systems, Object-Oriented Software Design, and Web Architectures.',
-      skills: ['Computer Science', 'Data Structures', 'Database Engineering', 'Software Architecture']
+      description: 'Completed Bachelor of Computer Application with CGPA 3.79/4.00. Built strong foundations in Data Structures, Database Management, and Web Development.',
+      skills: ['Computer Science', 'Data Structures', 'Database Engineering', 'Web Development']
     },
     {
       period: 'Feb 2026',
-      role: 'Full Stack Web Development Certification',
-      organization: 'Avish Educom, Durg',
-      type: 'Professional Certification',
-      badge: 'Certified',
+      role: 'Full Stack Web Development',
+      organization: 'Avish Educom, Agration Chowk, Durg, Chhattisgarh',
+      type: 'Certification Course',
+      badge: 'Completed',
       badgeColor: '#c084fc',
-      description: 'Advanced industrial full-stack certification focusing on modern MERN production workflows, real-time data sync, state management, and cloud deployment best practices.',
-      skills: ['MERN Mastery', 'Component Architecture', 'Full-Stack Deployment']
+      description: 'Completed intensive hands-on professional training in modern full stack web development with MERN stack.',
+      skills: ['React.js', 'Node.js', 'Express.js', 'MongoDB']
     }
   ]
 };
