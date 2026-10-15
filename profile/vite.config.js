@@ -4,6 +4,9 @@ import { defineConfig } from 'vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  server: {
+    host: true, // Exposes Network link: e.g. http://192.168.x.x:5173/
+  },
   build: {
     chunkSizeWarningLimit: 1200,
     rollupOptions: {
