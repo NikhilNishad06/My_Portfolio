@@ -154,7 +154,7 @@ footer .r{display:flex;gap:18px}footer a:hover{color:var(--cyan)}
   <div class="wrap"><div class="hero-copy">
     <div class="pill"><i></i>Full Satck Developer </div>
     <h1>Scalable full-stack apps that <span class="grad">businesses rely on.</span></h1>
-    <p>MERN stack developer building production-ready ERP, HR, MIS and inventory systems with secure REST APIs and responsive UI.</p>
+    <p>Full stack developer building production-ready ERP, HR, MIS and inventory systems with secure REST APIs and responsive UI.</p>
     <div class="btns"><a href="#work" class="btn solid">View My Work</a><a href="#contact" class="btn">Let's Work Together</a></div>
   </div></div>
   <div class="hint">SCROLL TO EXPLORE<b></b></div>

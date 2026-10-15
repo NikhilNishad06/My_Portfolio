@@ -78,12 +78,12 @@ export default function Work() {
       <div className="wrap">
         <div className="sec-head work-header">
           <div>
-            <div className="tag rv">Enterprise Systems</div>
+            <div className="tag rv">Proven Track Record</div>
             <h2 className="rv">
-              Selected <span className="grad">Work & Portals</span>
+              Systems I Have <span className="grad">Engineered & Delivered</span>
             </h2>
             <p className="work-sub rv">
-              Scalable enterprise systems engineered with MERN stack — automatically scrolling (hover to inspect).
+              Production-grade enterprise systems and portals I have actively built and contributed to so far — powered by the MERN stack.
             </p>
           </div>
         </div>

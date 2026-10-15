@@ -6,7 +6,7 @@ export const portfolioData = {
     tagline: 'Full Stack Developer',
     headingPrefix: 'Scalable full-stack apps that ',
     headingHighlight: 'businesses rely on.',
-    heroDescription: 'MERN stack developer building production-ready ERP, HR, MIS and inventory systems with secure REST APIs and responsive UI.',
+    heroDescription: 'Full stack developer building production-ready ERP, HR, MIS and inventory systems with secure REST APIs and responsive UI.',
     aboutLead: 'I turn business requirements into production-ready software — from database design to deployment.',
     aboutSub: 'Hands-on with the MERN stack, delivering end-to-end enterprise solutions — ERP, HR management, MIS and purchase/inventory systems — with a strong focus on responsive UI, secure REST APIs and performance optimization.'
   },
