@@ -1,13 +1,13 @@
 export const portfolioData = {
   personal: {
     name: 'Nikhil Nishad',
-    title: 'MERN Stack Developer',
+    title: 'Full Stack Developer',
     location: 'Bhilai, India',
-    tagline: 'Full Stack Developer',
-    headingPrefix: 'Scalable full-stack apps that ',
-    headingHighlight: 'businesses rely on.',
-    heroDescription: 'Full stack developer building production-ready ERP, HR, MIS and inventory systems with secure REST APIs and responsive UI.',
-    aboutLead: 'I turn business requirements into production-ready software — from database design to deployment.',
+    tagline: 'Available for full-time & enterprise projects',
+    headingPrefix: 'Building scalable web apps & ',
+    headingHighlight: 'enterprise systems.',
+    heroDescription: 'Crafting production-grade Full Stack applications, secure backend APIs, and modern responsive interfaces that drive business growth.',
+    aboutLead: 'I turn complex business requirements into production-ready software — from database architecture to smooth deployment.',
     aboutSub: 'Hands-on with the MERN stack, delivering end-to-end enterprise solutions — ERP, HR management, MIS and purchase/inventory systems — with a strong focus on responsive UI, secure REST APIs and performance optimization.'
   },
   education: [
