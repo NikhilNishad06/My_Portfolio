@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react';
 import rocketLogo from '../assets/rocket2-removebg-preview.png';
+import MiniGameModal from './MiniGameModal';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isGameOpen, setIsGameOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,6 +45,17 @@ export default function Navbar() {
           <a href="#services">Services</a>
           <a href="#journey">Journey</a>
           <a href="#contact" className="btn">Let's Work Together</a>
+          <button
+            type="button"
+            className="btn-game-nav"
+            onClick={() => setIsGameOpen(true)}
+            aria-label="Play Arcade Games"
+            title="Play Fun Arcade Games!"
+          >
+            <span className="game-icon-bounce"></span>
+            <span>Play Game</span>
+            <span className="game-tag-pulse">FREE</span>
+          </button>
         </div>
         <button
           className={`burger ${menuOpen ? 'o' : ''}`}
@@ -63,7 +76,22 @@ export default function Navbar() {
         <a href="#services" onClick={closeMenu}>Services</a>
         <a href="#journey" onClick={closeMenu}>Journey</a>
         <a href="#contact" onClick={closeMenu}>Contact</a>
+        <button
+          type="button"
+          className="btn-game-nav"
+          style={{ marginTop: '12px', justifyContent: 'center' }}
+          onClick={() => {
+            closeMenu();
+            setIsGameOpen(true);
+          }}
+        >
+          <span className="game-icon-bounce">🎮</span>
+          <span>Play Game (Arcade)</span>
+          <span className="game-tag-pulse">FREE</span>
+        </button>
       </div>
+
+      <MiniGameModal isOpen={isGameOpen} onClose={() => setIsGameOpen(false)} />
     </>
   );
 }
